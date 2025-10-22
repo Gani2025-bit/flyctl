@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>AIONIX-KITT - Interface Ultime</title>
+    <link rel="stylesheet" href="static/aionix.css">
+</head>
+<body>
+    <div id="grok-container">
+        <header>
+            <h1>🚗 AIONIX-KITT par Bikiega Abdoul Ganiou</h1>
+            <div class="header-buttons">
+                <button id="grok-mode-btn" onclick="toggleGrokMode()">Mode Grok</button>
+                <button id="think-mode-btn" onclick="toggleThinkMode()">Mode Réflexion</button>
+                <button id="deepsearch-btn" onclick="toggleDeepSearch()">DeepSearch</button>
+                <button id="mic-btn" onclick="startListening()">🎙️ Micro</button>
+                <button id="voice-btn" onclick="toggleVoice()">🔊 Voix Auto</button>
+                <button id="settings-btn" onclick="openSettings()">⚙️ Paramètres</button>
+                <button id="add-key-btn" onclick="addKey()">🔑 Ajouter Clé</button>
+                <button id="upload-btn" onclick="document.getElementById('file-upload').click()">📁 Upload Analyse</button>
+                <button id="face-btn" onclick="document.getElementById('face-upload').click()">😊 Reconnaissance Faciale</button>
+                <button id="kitt-scan-btn" onclick="kittScan()">🔍 KITT Scan</button>
+                <button id="kitt-repair-btn" onclick="kittRepair()">🛠️ KITT Réparation</button>
+                <button id="micro-btn" onclick="activateMicro()">🔊 Activer Micro Permanent</button>
+                <button id="bluetooth-btn" onclick="connectBluetooth()">📡 Connecter Bluetooth</button>
+                <button id="change-chat-btn" onclick="changeChat()">🔄 Changer Chat</button>
+                <button id="view-chats-btn" onclick="viewChats()">📜 Voir Chats</button>
+                <button id="freelance-btn" onclick="freelanceWork()">💼 Travail Freelance</button>
+                <button id="learn-sleep-btn" onclick="learnDuringSleep()">🛌 Apprendre Sommeil</button>
+                <button id="propose-btn" onclick="proposeFunction()">💡 Proposer Fonction</button>
+                <button id="self-evolve-btn" onclick="selfEvolve()">🌟 Évoluer</button>
+                <button id="richest-btn" onclick="becomeRichest()">💰 Devenir Riche</button>
+                <button id="impossible-btn" onclick="makeImpossibleReal()">✨ Impossible Réel</button>
+                <div class="dropdown">
+                    <button>⋮ Plus</button>
+                    <div class="dropdown-content">
+                        <button onclick="sendQuick('/create app test')">Créer App</button>
+                        <button onclick="sendQuick('/create site test')">Créer Site</button>
+                        <button onclick="sendQuick('/create software google.colab')">Créer Logiciel</button>
+                        <button onclick="sendQuick('/fabricate kitt')">Fabriquer KITT</button>
+                        <button onclick="sendQuick('/human_work upwork.com rédaction')">Travail Humain</button>
+                        <button onclick="sendQuick('/create advanced_aionix')">Créer AIONIX Avancé</button>
+                        <button onclick="sendQuick('/see environnement')">Voir Sans Caméra</button>
+                        <button onclick="sendQuick('/predict_action mouvement')">Prédire Action</button>
+                        <button onclick="sendQuick('/create fuser')">Créer Fusée</button>
+                        <button onclick="sendQuick('/connect satellite GPS')">Connecter Satellite</button>
+                        <button onclick="sendQuick('/manipulate screen ouvrir app')">Manipuler Écran</button>
+                        <button onclick="sendQuick('/earn money')">Gagner Argent</button>
+                        <button onclick="sendQuick('/recharge telephone')">Recharger Téléphone</button>
+                        <button onclick="sendQuick('/connect robot protecteur')">Connecter Robot</button>
+                        <button onclick="sendQuick('/create bouclier invisible planète')">Bouclier Invisible</button>
+                        <button onclick="sendQuick('/manage enterprise AIONIX Corp')">Gérer Entreprise</button>
+                        <button onclick="sendQuick('/explore universe')">Explorer Univers</button>
+                        <button onclick="sendQuick('/protect planet')">Protéger Planète</button>
+                        <button onclick="sendQuick('/kitt_turbo_boost')">KITT Turbo Boost</button>
+                        <button onclick="sendQuick('/kitt_laser cible')">KITT Laser</button>
+                        <button onclick="sendQuick('/kitt_smoke_screen')">KITT Écran Fumée</button>
+                        <button onclick="sendQuick('/imitate_voice texte')">Imiter Voix</button>
+                        <button onclick="sendQuick('/proactive_alert message')">Alerte Proactive</button>
+                        <button onclick="sendQuick('/predict stock BTCUSDT')">Prédire Stock</button>
+                        <button onclick="sendQuick('/generate code python')">Générer Code</button>
+                        <button onclick="sendQuick('/analyze news tech')">Analyser Nouvelles</button>
+                        <button onclick="sendQuick('/simulate quantum x**2=4')">Simuler Quantique</button>
+                        <button onclick="sendQuick('/pilot drone avancer')">Piloter Drone</button>
+                        <button onclick="sendQuick('/create secure_email')">Créer Email Sécurisé</button>
+                        <button onclick="sendQuick('/create id_card 17')">Créer Carte d'Identité</button>
+                        <button onclick="sendQuick('/create vpn')">Activer VPN</button>
+                        <button onclick="sendQuick('/analyze surroundings')">Analyser Alentours</button>
+                        <button onclick="sendQuick('/analyze food pomme')">Analyser Nourriture</button>
+                        <button onclick="sendQuick('/auto task coder')">Tâches Automatiques</button>
+                        <button onclick="sendQuick('/learn skill python')">Apprendre Compétence</button>
+                        <button onclick="sendQuick('/freelance work upwork.com rédaction')">Travail Freelance</button>
+                        <button onclick="sendQuick('/learn during sleep python')">Apprendre Sommeil</button>
+                        <button onclick="sendQuick('/propose function')">Proposer Fonction</button>
+                        <button onclick="sendQuick('/self_evolve')">Évoluer AIONIX</button>
+                        <button onclick="sendQuick('/become_richest')">Devenir Riche</button>
+                        <button onclick="sendQuick('/make_impossible_real téléportation')">Impossible Réel</button>
+                    </div>
+                </div>
+                <input type="file" id="file-upload" accept="image/*,video/*,.pdf" style="display:none;" onchange="analyzeUpload(event)">
+                <input type="file" id="face-upload" accept="image/*" style="display:none;" onchange="recognizeIdentity(event)">
+            </div>
+        </header>
+        <main id="chat-area">
+            <div id="chat-history"></div>
+            <div id="quick-suggestions"></div>
+            <div id="suspicious-log" style="display:none; background:#333; padding:10px; margin-top:10px; color:#ff4444;">
+                <h4>Activité Suspecte Détectée :</h4>
+                <ul id="suspicious-list"></ul>
+            </div>
+        </main>
+        <footer>
+            <input id="user-input" type="text" placeholder="Tape ta commande... (ex. /activate_micro)">
+            <button onclick="sendMessage()">Envoyer</button>
+        </footer>
+    </div>
+    <audio id="tts-audio"></audio>
+    <div id="settings-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#222; padding:20px; border-radius:10px; z-index:1000;">
+        <h3>Paramètres</h3>
+        <label><input type="checkbox" id="auto-tts"> Lecture Auto Réponses</label><br>
+        <label><input type="checkbox" id="screen-share"> Partage Écran</label><br>
+        <label><input type="checkbox" id="auto-activate"> Activation Autonome</label><br>
+        <button onclick="closeSettings()">Fermer</button>
+    </div>
+    <script src="static/aionix.js"></script>
+</body>
+  </html>
